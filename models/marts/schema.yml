@@ -1,0 +1,45 @@
+version: 2
+
+models:
+  - name: dim_customers
+    description: ""
+    columns:
+      - name: customer_id
+        description: ""
+        tests:
+          - unique
+          - not_null
+
+
+      - name: first_name
+        description: ""
+
+      - name: last_name
+        description: ""
+
+      - name: first_order
+        description: ""
+
+  - name: fct_orders
+    description: ""
+    columns:
+      - name: order_id
+        description: ""
+
+      - name: customer_id
+        description: ""
+
+      - name: order_date
+        description: ""
+
+      - name: status
+        description: ""
+
+      - name: _etl_loaded_at
+        description: ""
+
+      - name: paymentmethod
+        description: ""
+
+      - name: amount
+        description: ""
