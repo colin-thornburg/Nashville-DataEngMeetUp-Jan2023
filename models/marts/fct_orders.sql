@@ -1,9 +1,8 @@
-with orders as (
-    Select * from {{ ref('stg_orders') }}
-),
+with
+    orders as (select * from {{ ref("stg_orders") }}),
 
-payments as (
-    Select * from {{ ref('stg_payments') }}
-)
+    payments as (select * from {{ ref("stg_payments") }})
 
-Select orders.*, payments.paymentmethod, payments.amount from orders join payments using (order_id)
+select orders.*, payments.paymentmethod, payments.amount
+from orders
+join payments using (order_id)
