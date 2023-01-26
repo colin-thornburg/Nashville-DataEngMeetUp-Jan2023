@@ -3,7 +3,7 @@ with
 
     orders as (select * from {{ ref("stg_orders") }})
 
-select customers.*, min(orders.order_date) as first_order
+select customers.*, min(orders.order_date) as first_orders
 from customers
 join orders using (customer_id)
 group by customer_id, first_name, last_name
