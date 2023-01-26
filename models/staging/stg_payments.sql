@@ -12,8 +12,7 @@ renamed as (
         paymentmethod,
         status,
         amount,
-        created,
-        _batched_at
+        created
 
     from source
 
