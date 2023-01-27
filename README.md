@@ -1,10 +1,4 @@
-Welcome to your new dbt project!
-
-### Using the starter project
-
-Try running the following commands:
-- dbt run
-- dbt test
+models and configuration files covered in the January 2023 Data Engineering meetup in Nashville, TN
 
 
 ### Resources:
